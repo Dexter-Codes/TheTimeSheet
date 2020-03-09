@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TheTimeSheet.Views.MonthlyTimeSheet">
+        <ScrollView Orientation="Both">
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="0" />
+                <Label Text="Week1" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="1" />
+                <Label Text="" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="2" />
+                <Label Text="Overtime" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="3" />
+                <Label Text="Week2" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="4" />
+                <Label Text="" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="5" />
+                <Label Text="Overtime" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="6" TextColor="Red" />
+                <Label Text="Week3" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="7" TextColor="Red" />
+                <Label Text="" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="8" TextColor="Red" />
+                <Label Text="Overtime" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="9" TextColor="Red" />
+                <Label Text="Week4" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="10" TextColor="Red" />
+                <Label Text="" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="11" TextColor="Red" />
+                <Label Text="Overtime" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="12" TextColor="Red" />
+                <Label Text="Week5" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="13" TextColor="Red" />
+                <Label Text="" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="14" TextColor="Red" />
+                <Label Text="Overtime" HorizontalOptions="Start" HorizontalTextAlignment="Center" Grid.Row="0"
+                       Grid.Column="15" TextColor="Red" />
+            </Grid>
+
+            <Grid x:Name="TimeSheetGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>                    
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Month}"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="MONDAY"/>
+                <Label Grid.Row="2" Grid.Column="0" Text="TUESDAY"/>
+                <Label Grid.Row="3" Grid.Column="0" Text="WEDNESDAY"/>
+                <Label Grid.Row="4" Grid.Column="0" Text="THURSDAY"/>
+                <Label Grid.Row="5" Grid.Column="0" Text="FRIDAY"/>
+                <Label Grid.Row="6" Grid.Column="0" Text="SATURDAY"/>
+                <Label Grid.Row="7" Grid.Column="0" Text="SUNDAY"/>
+                <Label Grid.Row="8" Grid.Column="0" Text="TOTAL WEEKLY HOURS"/>
+                <Label Grid.Row="9" Grid.Column="0" Text="#VALUE!"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
